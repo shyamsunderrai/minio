@@ -1,4 +1,4 @@
-> NOTE: This helm chart is in code freeze i.e we will only update MinIO releases occastionally by bumping up the version. For latest features you are advised to start using our [MinIO operator](https://github.com/minio/operator).
+> NOTE: Customized to run with privileged user, basically runAsUser/runAsGroup/fsGroup set to 0 (to run as root).
 
 MinIO
 =====
