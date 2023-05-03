@@ -1,0 +1,36 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  kind: PersistentVolumeClaim
+  metadata:
+    annotations:
+      meta.helm.sh/release-name: minio-1683096569
+      meta.helm.sh/release-namespace: minio
+      volume.beta.kubernetes.io/storage-provisioner: rancher.io/local-path
+      volume.kubernetes.io/selected-node: h3-worker
+      volume.kubernetes.io/storage-provisioner: rancher.io/local-path
+    finalizers:
+    - kubernetes.io/pvc-protection
+    labels:
+      app: minio
+      app.kubernetes.io/managed-by: Helm
+      chart: minio-8.0.10
+      heritage: Helm
+      release: minio-1683096569
+    name: minio-1683096569
+    namespace: minio
+    resourceVersion: "37756"
+    uid: 087221ef-d7b2-468a-bf26-6d9960240da0
+  spec:
+    accessModes:
+    - ReadWriteOnce
+    resources:
+      requests:
+        storage: 5Gi
+    storageClassName: standard
+    volumeMode: Filesystem
+  status:
+    phase: Pending
+kind: List
+metadata:
+  resourceVersion: ""
